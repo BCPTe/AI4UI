@@ -1,0 +1,44 @@
+:root {
+  --color-primary-rgb: 30, 127, 238;
+  --color-primary-foreground-rgb: 255, 255, 255;
+
+  --color-secondary-rgb: 114, 114, 255;
+  --color-secondary-foreground-rgb: 255, 255, 255;
+
+  --color-destructive-rgb: 208, 0, 0;
+  --color-destructive-foreground-rgb: 255, 255, 255;
+
+  --color-warning-rgb: 255, 161, 10;
+  --color-warning-foreground-rgb: 0, 0, 0;
+
+  --color-accent-rgb: 0, 69, 194;
+  --color-accent-foreground-rgb: 255, 255, 255;
+
+  --color-ring-rgb: 0, 69, 194;
+
+  --color-background-rgb: 249, 249, 249;
+  --color-text-rgb: 17, 17, 17;
+}
+
+/* Dark mode overrides */
+[data-theme="dark"] {
+  --color-primary-rgb: 41, 128, 185;
+  --color-primary-foreground-rgb: 255, 255, 255;
+
+  --color-secondary-rgb: 39, 174, 96;
+  --color-secondary-foreground-rgb: 255, 255, 255;
+
+  --color-destructive-rgb: 208, 0, 0;
+  --color-destructive-foreground-rgb: 255, 255, 255;
+
+  --color-warning-rgb: 255, 161, 10;
+  --color-warning-foreground-rgb: 0, 0, 0;
+
+  --color-accent-rgb: 0, 69, 194;
+  --color-accent-foreground-rgb: 255, 255, 255;
+
+  --color-background-rgb: 17, 17, 17;
+  --color-text-rgb: 249, 249, 249;
+
+  --color-ring-rgb: 0, 69, 194;
+}

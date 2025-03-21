@@ -1,0 +1,45 @@
+/* TODO: split it in tokens */
+
+:root {
+  --color-primary: #3498db;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #2ecc71;
+  --color-secondary-foreground: #ffffff;
+  --color-destructive: #e74c3c;
+  --color-destructive-foreground: #ffffff;
+  --color-accent: #9b59b6;
+  --color-accent-foreground: #ffffff;
+  --color-background: #ecf0f1;
+  --color-input: #bdc3c7;
+  --color-ring: #95a5a6;
+}
+
+/** RIPPLE EFFECT **/
+/*
+  The ripple is absolutely positioned, anchored where you clicked,
+  and expands/fades out via keyframes.
+*/
+.ripple {
+  position: absolute;
+  /* Start at the click point, shifting -50% so it's centered */
+  transform: translate(-50%, -50%);
+  border-radius: 9999px; /* fully rounded for a circle */
+  pointer-events: none;
+  background-color: currentColor; /* match the element's text color, or pick a fixed color */
+  opacity: 0.5;
+  width: 0.75rem;
+  height: 0.75rem;
+  animation: rippleAnimation 300ms linear forwards;
+  /* You can tweak these values to taste! */
+}
+
+@keyframes rippleAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(10);
+    opacity: 0;
+  }
+}

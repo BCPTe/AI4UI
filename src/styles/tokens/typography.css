@@ -1,0 +1,26 @@
+:root {
+  --font-family-sans-serif: 'Helvetica Neue', Arial, sans-serif;
+  --font-family-serif: 'Georgia', 'Times New Roman', serif;
+  --font-family-monospace: 'Courier New', Courier, monospace;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+
+  --line-height-xs: 1.2;
+  --line-height-sm: 1.4;
+  --line-height-md: 1.6;
+  --line-height-lg: 1.8;
+  --line-height-xl: 2.0;
+
+  --letter-spacing-tight: -0.05em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.05em;
+}

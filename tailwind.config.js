@@ -8,24 +8,47 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#0070f3",
-          foreground: "#ffffff",
+          DEFAULT: "rgba(var(--color-primary-rgb))",
+          foreground: "rgba(var(--color-primary-foreground-rgb))",
         },
         secondary: {
-          DEFAULT: "#f5f5f5",
-          foreground: "#333333",
+          DEFAULT: "rgba(var(--color-secondary-rgb))",
+          foreground: "rgba(var(--color-secondary-foreground-rgb))",
         },
         destructive: {
-          DEFAULT: "#ff4d4f",
-          foreground: "#ffffff",
+          DEFAULT: "rgba(var(--color-destructive-rgb))",
+          foreground: "rgba(var(--color-destructive-foreground-rgb))",
         },
+        warning: {
+          DEFAULT: "rgba(var(--color-warning-rgb))",
+          foreground: "rgba(var(--color-warning-foreground-rgb))",
+        },
+        // success: {
+        //   DEFAULT: "rgba(var(--color-success-rgb))",
+        //   foreground: "rgba(var(--color-success-foreground-rgb))",
+        // },
         accent: {
-          DEFAULT: "#f0f0f0",
-          foreground: "#333333",
+          DEFAULT: "rgba(var(--color-accent-rgb))",
+          foreground: "rgba(var(--color-accent-foreground-rgb))",
         },
-        background: "#ffffff",
-        input: "#e2e8f0",
-        ring: "#0070f3",
+        background: "rgba(var(--color-background-rgb))",
+        text: "rgba(var(--color-text-rgb))",
+        // input: "rgba(var(--color-input-rgb))",
+        ring: "rgba(var(--color-ring-rgb))",
+      },
+      fontWeight: {
+        100: 100,
+        200: 200,
+        300: 300,
+        400: 400,
+        500: 500,
+        600: 600,
+        700: 700,
+        800: 800,
+        900: 900,
+      },
+      transitionDuration: {
+        DEFAULT: '400ms',
       },
     },
   },
