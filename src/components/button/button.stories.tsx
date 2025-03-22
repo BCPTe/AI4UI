@@ -79,7 +79,13 @@ export const SolidVariant: Story = {
         <Button variant="solid" color="primary" size="lg">
           Large
         </Button>
-        <Button variant="solid" color="primary" size="icon">
+        <Button variant="solid" color="primary" size="sm" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="solid" color="primary" size="md" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="solid" color="primary" size="lg" isIconOnly>
           🔍
         </Button>
       </div>
@@ -118,7 +124,13 @@ export const OutlineVariant: Story = {
         <Button variant="outline" color="primary" size="lg">
           Large
         </Button>
-        <Button variant="outline" color="primary" size="icon">
+        <Button variant="outline" color="primary" size="sm" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="outline" color="primary" size="md" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="outline" color="primary" size="lg" isIconOnly>
           🔍
         </Button>
       </div>
@@ -157,7 +169,13 @@ export const GhostVariant: Story = {
         <Button variant="ghost" color="primary" size="lg">
           Large
         </Button>
-        <Button variant="ghost" color="primary" size="icon">
+        <Button variant="ghost" color="primary" size="sm" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="ghost" color="primary" size="md" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="ghost" color="primary" size="lg" isIconOnly>
           🔍
         </Button>
       </div>
@@ -196,7 +214,13 @@ export const SoftVariant: Story = {
         <Button variant="soft" color="primary" size="lg">
           Large
         </Button>
-        <Button variant="soft" color="primary" size="icon">
+        <Button variant="soft" color="primary" size="sm" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="soft" color="primary" size="md" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="soft" color="primary" size="lg" isIconOnly>
           🔍
         </Button>
       </div>
@@ -234,6 +258,15 @@ export const LinkVariant: Story = {
         </Button>
         <Button variant="link" color="primary" size="lg">
           Large
+        </Button>
+        <Button variant="link" color="primary" size="sm" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="link" color="primary" size="md" isIconOnly>
+          🔍
+        </Button>
+        <Button variant="link" color="primary" size="lg" isIconOnly>
+          🔍
         </Button>
       </div>
     </div>
@@ -316,17 +349,17 @@ export const DisabledStates: Story = {
 export const WithIcon: Story = {
   render: () => (
     <div className="flex flex-wrap gap-4">
-      <Button variant="solid" color="primary">
-        <span className="mr-2">✉️</span> Email
+      <Button leftSection={"✉️"} variant="solid" color="primary">
+        Email
       </Button>
-      <Button variant="outline" color="secondary">
-        <span className="mr-2">🔔</span> Notifications
+      <Button leftSection={"🔔"} variant="outline" color="secondary">
+        Notifications
       </Button>
-      <Button variant="soft" color="warning">
-        Settings <span className="ml-2">⚙️</span>
+      <Button rightSection={"⚙️"} variant="soft" color="warning">
+        Settings
       </Button>
-      <Button variant="ghost" color="destructive">
-        <span className="mr-2">🗑️</span> Delete
+      <Button rightSection={"🗑️"} variant="ghost" color="destructive">
+        Delete
       </Button>
     </div>
   ),
@@ -335,17 +368,13 @@ export const WithIcon: Story = {
 // Loading state example
 export const Loading: Story = {
   render: () => (
-    <Button disabled className="relative">
-      <span className="absolute left-0 right-0 flex justify-center">
-        <svg className="h-5 w-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-          <path
-            className="opacity-75"
-            fill="currentColor"
-            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-        </svg>
-      </span>
-      <span className="opacity-0">Loading</span>
-    </Button>
+    <div className="flex flex-wrap gap-4">
+      <Button disabled isLoading spinnerPosition="left">
+        Sending...
+      </Button>
+      <Button disabled isLoading spinnerPosition="right" color="destructive">
+        Deleting...
+      </Button>
+    </div>
   ),
 };

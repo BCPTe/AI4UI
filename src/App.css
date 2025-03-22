@@ -15,31 +15,45 @@
 }
 
 /** RIPPLE EFFECT **/
-/*
-  The ripple is absolutely positioned, anchored where you clicked,
-  and expands/fades out via keyframes.
-*/
 .ripple {
   position: absolute;
-  /* Start at the click point, shifting -50% so it's centered */
   transform: translate(-50%, -50%);
-  border-radius: 9999px; /* fully rounded for a circle */
+  border-radius: 9999px;
   pointer-events: none;
-  background-color: currentColor; /* match the element's text color, or pick a fixed color */
+  /* background-color: currentColor; */
   opacity: 0.5;
   width: 0.75rem;
   height: 0.75rem;
   animation: rippleAnimation 300ms linear forwards;
-  /* You can tweak these values to taste! */
 }
 
 @keyframes rippleAnimation {
   0% {
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 0.5;
   }
   100% {
-    transform: translate(-50%, -50%) scale(10);
+    transform: translate(-50%, -50%) scale(20);
     opacity: 0;
+  }
+}
+
+/** SPINNER **/
+/* Spinner container */
+.spinner {
+  display: inline-block;
+  /* font-size: 1rem; */
+  width: 1em;
+  height: 1em;
+  border: 0.16rem solid currentColor; /* Light gray background ring */
+  border-top-color: color-mix(in srgb, currentColor 20%, transparent);    /* Darker top to create spin illusion */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+/* Keyframe animation */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
   }
 }
