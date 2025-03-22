@@ -14,9 +14,10 @@
   --color-accent-rgb: 0, 69, 194;
   --color-accent-foreground-rgb: 255, 255, 255;
 
-  --color-ring-rgb: 0, 69, 194;
+  --color-input-rgb: 100, 100, 100;
+  --color-input-foreground-rgb: 0, 0, 0;
 
-  --color-background-rgb: 249, 249, 249;
+  --color-background-rgb: 252, 252, 252;
   --color-text-rgb: 17, 17, 17;
 }
 
@@ -37,8 +38,9 @@
   --color-accent-rgb: 0, 69, 194;
   --color-accent-foreground-rgb: 255, 255, 255;
 
-  --color-background-rgb: 17, 17, 17;
-  --color-text-rgb: 249, 249, 249;
+  --color-input-rgb: 100, 100, 100;
+  --color-input-foreground-rgb: 0, 0, 0;
 
-  --color-ring-rgb: 0, 69, 194;
+  --color-background-rgb: 17, 17, 17;
+  --color-text-rgb: 252, 252, 252;
 }
