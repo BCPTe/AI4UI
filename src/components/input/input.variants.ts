@@ -7,7 +7,7 @@ export const inputVariants = cva(
     variants: {
       variant: {
         outline: "bg-transparent",
-        underline: "border-transparent bg-transparent border-b-2 focus-visible:ring-0 focus-visible:ring-offset-0",
+        underline: "!rounded-none border-transparent bg-transparent border-b-2 focus-visible:ring-0 focus-visible:ring-offset-0",
         ghost: "border-transparent bg-transparent",
         filled: "border-transparent",
       },

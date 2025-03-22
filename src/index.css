@@ -793,6 +793,19 @@ video {
   border-radius: 0.35rem;
 }
 
+.\!rounded-none {
+  border-radius: 0 !important;
+}
+
+.\!rounded-md {
+  border-radius: 0.5rem !important;
+}
+
+.rounded-b-none {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
 .border {
   border-width: 1px;
 }
